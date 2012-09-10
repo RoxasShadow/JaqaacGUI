@@ -1,0 +1,5 @@
+Just a qaac GUI in order to encode your AAC/ALAC faster.
+
+If you want to use the standalone version, be sure to have installed qaac, eac3to, the relative libraries and the Apple Application Support.
+If you want to use the installer, just run the setup and then AppleApplicationSupport.msi.
+You can find all you need in 'Downloads'.
