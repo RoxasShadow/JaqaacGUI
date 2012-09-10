@@ -5,7 +5,7 @@
   * First 1.0 stable version. Too changes to describe here.
   
 2011-07-08  Giovanni Capuano  <webmaster@giovannicapuano.net>
-  * Fix to form size and alignment.
+  * Fix form size and alignment.
   
 2011-07-10  Giovanni Capuano  <webmaster@giovannicapuano.net>
   * 1.1 version, with m2ts input, form alignment fix and output dialog extended to system root.
