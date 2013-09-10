@@ -1,9 +1,9 @@
 [Setup]
 AppName               = JaqaacGUI
-AppVerName            = JaqaacGUI 1.1
+AppVerName            = JaqaacGUI 1.1.1
 AppPublisher          = Giovanni Capuano
 AppPublisherURL       = https://github.com/RoxasShadow
-AppVersion            = 1.1
+AppVersion            = 1.1.1
 DefaultDirName        = {pf}\JaqaacGUI
 DefaultGroupName      = JaqaacGUI
 UninstallDisplayIcon  = {app}\JaqaacGUI.exe
@@ -13,8 +13,8 @@ OutputDir             = Installer
 
 [Tasks]
 Name: "desktopicon";  Description: "{cm:CreateDesktopIcon}"
-Name: "qaac";         Description: "Install qaac v1.40"       
-Name: "eac3to";       Description: "Install eac3to v3.24 (Required for m2ts input)"
+Name: "qaac";         Description: "Install qaac v2.20"       
+Name: "eac3to";       Description: "Install eac3to v3.27 (Required for m2ts input)"
 
 [Icons]
 Name: "{group}\JaqaacGUI";        Filename: "{app}\JaqaacGUI.exe"
@@ -23,16 +23,15 @@ Name: "{userdesktop}\JaqaacGUI";  Filename: "{app}\JaqaacGUI.exe";  Tasks: deskt
 [Files]
 Source: "JaqaacGUI\bin\Release\JaqaacGUI.exe";        DestDir: "{app}"
 
-Source: "Requirements\libFLAC++.dll";                 DestDir: "{win}";         Tasks: qaac
-Source: "Requirements\libFLAC.dll";                   DestDir: "{win}";         Tasks: qaac
 Source: "Requirements\qaac.exe";                      DestDir: "{win}";         Tasks: qaac
 Source: "Requirements\refalac.exe";                   DestDir: "{win}";         Tasks: qaac
 Source: "Requirements\msvcr100.dll";                  DestDir: "{syswow64}";    Tasks: qaac
 Source: "Requirements\msvcp100.dll";                  DestDir: "{syswow64}";    Tasks: qaac
-Source: "Requirements\libsoxrate.dll";                DestDir: "{syswow64}";    Tasks: qaac
+Source: "Requirements\libsoxrate.dll";                DestDir: "{syswow64}";    Tasks: qaac 
+Source: "Requirements\libFLAC.dll";                   DestDir: "{win}";         Tasks: qaac
 
-Source: "Requirements\avcodec.dll";                   DestDir: "{win}";         Tasks: eac3to
-Source: "Requirements\avutil-50.dll";                 DestDir: "{win}";         Tasks: eac3to 
+Source: "Requirements\avcodec-54.dll";                DestDir: "{win}";         Tasks: eac3to
+Source: "Requirements\avutil-52.dll";                 DestDir: "{win}";         Tasks: eac3to 
 Source: "Requirements\hdcd.dll";                      DestDir: "{win}";         Tasks: eac3to 
 Source: "Requirements\HookSurcode.dll";               DestDir: "{win}";         Tasks: eac3to 
 Source: "Requirements\libAften.dll";                  DestDir: "{win}";         Tasks: eac3to 
