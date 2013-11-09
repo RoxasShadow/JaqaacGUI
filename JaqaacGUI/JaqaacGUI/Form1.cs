@@ -37,10 +37,7 @@ namespace JaqaacGUI
             dialog.Title = title;
             dialog.Multiselect = multiselect;
             if (dialog.ShowDialog() == DialogResult.OK)
-                if (multiselect)
-                    return dialog.FileNames;
-                else
-                    return new string[] { File.Exists(dialog.FileName) ? dialog.FileName : "" };
+                return multiselect ? dialog.FileNames : new string[] { File.Exists(dialog.FileName) ? dialog.FileName : "" };
             else
                 if(multiselect)
                     return new string[] { };
@@ -67,10 +64,12 @@ namespace JaqaacGUI
             StreamWriter writer = new StreamWriter(file);
             writer.WriteLine(cmd);
             writer.Close();
+
             Process p = new Process();
             p.StartInfo.FileName = file;
             p.Start();
             p.WaitForExit();
+
             if (File.Exists(file))
                 File.Delete(file);
         }
@@ -78,10 +77,11 @@ namespace JaqaacGUI
         public Form1()
         {
             InitializeComponent();
-            audio = new List<string>();
-            output = "";
-            qaac = "";
-            eac3to = "";
+
+            audio   = new List<string>();
+            output  = "";
+            qaac    = "";
+            eac3to  = "";
             windows = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
         }
 
@@ -247,11 +247,6 @@ namespace JaqaacGUI
         private void button2_Click(object sender, EventArgs e)
         {
             output = SelectFolder();
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("http://omnivium.it"); 
         }
     }
 }
