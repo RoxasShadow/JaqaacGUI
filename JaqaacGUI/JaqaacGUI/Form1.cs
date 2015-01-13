@@ -27,7 +27,22 @@ namespace JaqaacGUI
     public partial class Form1 : Form
     {
         List<string> audio;
-        string       output, qaac, eac3to, windows;
+        string       output, previousInputFolder, qaac, eac3to, windows;
+        string       EXTENSIONS;
+        string[]     input;
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            audio      = new List<string>();
+            output     = "";
+            qaac       = "";
+            eac3to     = "";
+            input      = new string[] { };
+            EXTENSIONS = "M2TS (*.m2ts)|*m2ts|FLAC (*.flac)|*.flac|L16 (*.l16)|*.l16|WAV (*.wav)|*.wav|AIFF (*.aiff)|(*.aiff)|AU (*.au)|*.au|PCM (*.pcm)|*.pcm";
+            windows    = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+        }
 
         private string[] SelectFile(string initialDirectory, string filter, string title, bool multiselect = false)
         {
@@ -74,17 +89,6 @@ namespace JaqaacGUI
                 File.Delete(file);
         }
 
-        public Form1()
-        {
-            InitializeComponent();
-
-            audio   = new List<string>();
-            output  = "";
-            qaac    = "";
-            eac3to  = "";
-            windows = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (audio.Count == 0)
@@ -92,12 +96,9 @@ namespace JaqaacGUI
                 MessageBox.Show("No file audio has been chosen.");
                 return;
             }
-           
+
             if (output == "" || !Directory.Exists(output))
-            {
-                MessageBox.Show("Output folder doesn't found.");
-                return;
-            }
+                output = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
             if (qaac == "")
                 qaac = File.Exists(windows + "\\qaac.exe") ? windows + "\\qaac.exe" : SelectFile(windows, "Executable (*.exe)|*.exe|All files (*.*)|*.*", "Select an executable for qaac")[0];
@@ -183,11 +184,26 @@ namespace JaqaacGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] files = SelectFile(Environment.GetFolderPath(Environment.SpecialFolder.MyMusic), "FLAC (*.flac)|*.flac|L16 (*.l16)|*.l16|WAV (*.wav)|*.wav|AIFF (*.aiff)|(*.aiff)|AU (*.au)|*.au|PCM (*.pcm)|*.pcm|M2TS (*.m2ts)|*m2ts", "Select a file audio", true);
+            string folder, extension;
+
+            if (input.Length > 0)
+            {
+                folder = Path.GetDirectoryName(input[0]);
+
+                string format = Path.GetExtension(input[0]);
+                extension = String.Format("{0} (*{1})|*{1}", format.ToUpper(), format);
+            }
+            else {
+                folder =  Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
+                extension = EXTENSIONS;
+            }
             
-            foreach(string f in files)
-                if (File.Exists(f))
-                    audio.Add(f);                
+            input = SelectFile(folder, extension, "Select a file audio", true);
+
+            if (input.Length > 0)
+                foreach (string f in input)
+                    if (File.Exists(f))
+                        audio.Add(f);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -246,7 +262,7 @@ namespace JaqaacGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            output = SelectFolder();
+            output = SelectFolder(Environment.SpecialFolder.Desktop);
         }
     }
 }

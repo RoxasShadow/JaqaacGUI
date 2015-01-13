@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="JaqaacGUI.exe" version="1.3.0.0" publicKeyToken="4a5193b34cda1fe5" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="aac.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="JaqaacGUI" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="JaqaacGUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opzioni manifesto Controllo account utente
+            Se si desidera modificare il livello di Controllo account utente di Windows, sostituire il 
+            nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Se si specifica il nodo requestedExecutionLevel, la virtualizzazione dei file system e del Registro di sistema verrà disabilitata.
+            Se si desidera utilizzare la virtualizzazione dei file e del Registro di sistema per la 
+            compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JaqaacGUI.exe" size="428544">
+      <assemblyIdentity name="JaqaacGUI" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vtMaX3kQtSTOeCF3vRxNtYOZqsS4PwKEStiraWuDyCI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="aac.ico" size="204504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qk4K1EfnNN/UdhRXtm5t1mVxguaw9J+YLdjRC08Os/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="JaqaacGUI.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Elenco di tutte le versioni di Windows con cui è possibile utilizzare l'applicazione. 
+     L'ambiente maggiormente compatibile verrà scelto automaticamente.-->
+      <!-- Se l'applicazione è progettata per l'uso con Windows Vista, rimuovere il commento dal seguente nodo supportedOS-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- Se l'applicazione è progettata per l'uso con Windows 7, rimuovere il commento dal seguente nodo supportedOS-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- Se l'applicazione è progettata per l'uso con Windows 8, rimuovere il commento dal seguente nodo supportedOS-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- Se l'applicazione è progettata per l'uso con Windows 8.1, rimuovere il commento dal seguente nodo supportedOS-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=LIFESTREAM\Giovanni" issuerKeyHash="6088b89b37f7b3c0cc0f3aecaf4459c6f4b4b09e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yH5Qd31dLVJ2onRJB0K8PDBCYpIS9wN2rT3TPYgD/OQ=</DigestValue></Reference></SignedInfo><SignatureValue>AnKeM4V/5MfVPvfU26B+ABqF4Os2T421ig4g8geIKKXHxqi75xEu7Al8eEoN4cyW2tFPCWeKMR5O9kh82VOCH3ggP4nhOhmWTDa/pD/Xa2kFyAWiyIFLGDQe6M4p/8SDXuH/SnjRgyF3ruXI7kPlguOBCdgNh8+VnbxU/zW81d0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zcx0ERw1CI/eO2sH9fEV3oCTx6sLJWMQxyogloo7ep5qKTusE2YEJkbbuJOJwKOCq1CKyT5UFlK7NbmeEX0e0smI4JBJnb06BEeLytDEjbH+JUTflLVNcMJ8qrtEjtyayx4mED+h9CkLIw962cDBXdMBOic5/P6BhE2XRo2gi28=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e4fc03883dd33dad7603f712926242303cbc42074974a276522d5d7d77507ec8" Description="" Url=""><as:assemblyIdentity name="JaqaacGUI.exe" version="1.3.0.0" publicKeyToken="4a5193b34cda1fe5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LIFESTREAM\Giovanni</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WAx0TAnXMAUo27GedhCwsttEmyT47qBNWYpFfJkHFwA=</DigestValue></Reference></SignedInfo><SignatureValue>LLWrDEXbsECbU2e+UaN34wi/U7ypJ/xIS0Ya+6jszPHucQ1vCmQ/TitGRN7uRypVu3srGSSBqHzzsNlaxVObMhWXyNfTVyPOSA/lqHXntEhhykVa99qRoSU+URaFw+jl4Moh4ltMWKgucUPlaD79iQNvkuck4P4RkjHhTKDn+EY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zcx0ERw1CI/eO2sH9fEV3oCTx6sLJWMQxyogloo7ep5qKTusE2YEJkbbuJOJwKOCq1CKyT5UFlK7NbmeEX0e0smI4JBJnb06BEeLytDEjbH+JUTflLVNcMJ8qrtEjtyayx4mED+h9CkLIw962cDBXdMBOic5/P6BhE2XRo2gi28=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQVcwAZrosA61Fe7xyysSlPzANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYATABJAEYARQBTAFQAUgBFAEEATQBcAEcAaQBvAHYAYQBuAG4AaTAeFw0xNTAxMTMyMTA1MTVaFw0xNjAxMTQwMzA1MTVaMDExLzAtBgNVBAMeJgBMAEkARgBFAFMAVABSAEUAQQBNAFwARwBpAG8AdgBhAG4AbgBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNzHQRHDUIj947awf18RXegJPHqwslYxDHKiCWijt6nmopO6wTZgQmRtu4k4nAo4KrUIrJPlQWUrs1uZ4RfR7SyYjgkEmdvToER4vK0MSNsf4lRN+UtU1wwnyqu0SO3JrLHiYQP6H0KQsjD3rZwMFd0wE6Jzn8/oGETZdGjaCLbwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEIbn8PAHkfwDNFRZp802D8OcPQAQCBEVl7Os1vCND/ZZp77ZlZcvfjo8hYe8FNSatZbKKmfepzIc35CieMjn91Jg/gR3vXSkl2pO3Y+WDoPFnanmWpdJ3B4AXKPWH/gw/Oo1TCUCf7F92hbmbtfmYUHNphWIAfkYbQfM0jBseeg</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

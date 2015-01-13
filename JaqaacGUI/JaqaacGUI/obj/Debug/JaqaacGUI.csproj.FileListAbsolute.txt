@@ -11,3 +11,17 @@ E:\Users\Giovanni\Documents\Visual Studio 2013\Projects\JaqaacGUI\JaqaacGUI\obj\
 E:\Users\Giovanni\Documents\Visual Studio 2013\Projects\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.application
 E:\Users\Giovanni\Documents\Visual Studio 2013\Projects\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.exe
 E:\Users\Giovanni\Documents\Visual Studio 2013\Projects\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.pdb
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\bin\Debug\JaqaacGUI.exe.config
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\bin\Debug\JaqaacGUI.exe.manifest
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\bin\Debug\JaqaacGUI.application
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\bin\Debug\JaqaacGUI.exe
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\bin\Debug\JaqaacGUI.pdb
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.Form1.resources
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.Properties.Resources.resources
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.csproj.GenerateResource.Cache
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.TrustInfo.xml
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.exe.manifest
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.application
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.exe
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.pdb
+E:\Users\Giovanni\Documents\GitHub\C#\JaqaacGUI\JaqaacGUI\JaqaacGUI\obj\Debug\JaqaacGUI.csprojResolveAssemblyReference.cache

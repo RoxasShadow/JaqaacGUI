@@ -1,9 +1,9 @@
 [Setup]
 AppName               = JaqaacGUI
-AppVerName            = JaqaacGUI 1.2
+AppVerName            = JaqaacGUI 1.3
 AppPublisher          = Giovanni Capuano
 AppPublisherURL       = https://github.com/RoxasShadow
-AppVersion            = 1.2
+AppVersion            = 1.3
 DefaultDirName        = {pf}\JaqaacGUI
 DefaultGroupName      = JaqaacGUI
 UninstallDisplayIcon  = {app}\JaqaacGUI.exe
@@ -21,7 +21,7 @@ Name: "{group}\JaqaacGUI";        Filename: "{app}\JaqaacGUI.exe"
 Name: "{userdesktop}\JaqaacGUI";  Filename: "{app}\JaqaacGUI.exe";  Tasks: desktopicon
 
 [Files]
-Source: "JaqaacGUI\bin\Debug\JaqaacGUI.exe";        DestDir: "{app}"
+Source: "JaqaacGUI\bin\Debug\JaqaacGUI.exe";          DestDir: "{app}"
 
 Source: "Requirements\qaac.exe";                      DestDir: "{win}";         Tasks: qaac
 Source: "Requirements\refalac.exe";                   DestDir: "{win}";         Tasks: qaac

@@ -10,5 +10,8 @@
 2011-07-10  Giovanni Capuano  <webmaster@giovannicapuano.net>
   * 1.1 version, with m2ts input, form alignment fix and output dialog extended to system root.
 
-2013-09-10   Giovanni Capuano  <webmaster@giovannicapuano.net>
+2013-09-10  Giovanni Capuano  <webmaster@giovannicapuano.net>
   * Update qaac to 2.20, eac3to to 3.27 and AppleApplicationSupport to 2.3.4.
+
+2015-01-13  Giovanni Capuano  <webmaster@giovannicapuano.net>
+  * Set bitrate to 100, m2ts as default format and use history for input files and output folder
